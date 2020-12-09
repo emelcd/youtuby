@@ -39,7 +39,7 @@ while True:
     if data != clipis[-1] and "youtube" in data:
         clipis.append(data)
         win32clipboard.CloseClipboard()
-    elif data == "fin" or data == "end" or data=="cosa":
+    elif data == "fin" or data == "end" or data=="exit":
         break
     else:
         print(str(len(clipis) - 1) + " enlaces copiados", end="\r")

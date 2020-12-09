@@ -17,7 +17,9 @@ git clone https://github.com/mickiticki/youtuby
 cd youtuby
 python youtuby.py
 ```
+###### Uso:
 
+Abre un navegador y ve copiando links, cuando quieras acabar escribe: "fin", "end" o "exit" y cópialo al portapapeles.
 
 
 #### An easy tool for download music from youtube, using clipboard.
@@ -37,4 +39,6 @@ git clone https://github.com/mickiticki/youtuby
 cd youtuby
 python youtuby.py
 ```
+###### Usage:
 
+Open a browser and copy links, when you want to stop, just type "fin", "end" or "exit" and copy to the clipboard.
