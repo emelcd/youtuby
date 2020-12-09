@@ -1,8 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import win32clipboard
 from time import sleep
 import os
 from colorama import Fore, Back, Style, init
 import random
+
 init()
 os.system('cls')
 clipis = ['#Start']
@@ -10,7 +14,9 @@ win32clipboard.OpenClipboard()
 win32clipboard.EmptyClipboard()
 win32clipboard.SetClipboardText("#Start")
 win32clipboard.CloseClipboard()
+
 colors = [Fore.WHITE, Fore.YELLOW, Fore.RED, Fore.LIGHTBLUE_EX, Fore.LIGHTMAGENTA_EX, Fore.LIGHTGREEN_EX, Fore.LIGHTRED_EX]
+
 youtube_logo ="""
  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄▄• ▄▌▄▄▄▄· ▄▄▄ .
 ▐█▪██▌▪     █▪██▌•██  █▪██▌▐█ ▀█▪▀▄.▀·
@@ -18,10 +24,12 @@ youtube_logo ="""
  ▐█▀·.▐█▌.▐▌▐█▄█▌ ▐█▌·▐█▄█▌██▄▪▐█▐█▄▄▌
   ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀  ▀▀▀ ·▀▀▀▀  ▀▀▀ 
 """
+
 for char in youtube_logo:
     print(random.choice(colors) + char, end="")
     sleep(0.01)
 print(Style.RESET_ALL)
+
 while True:
     print("", end="\r")
     print(Fore.YELLOW, end="\r")
