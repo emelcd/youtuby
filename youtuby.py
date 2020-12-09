@@ -6,6 +6,7 @@ from time import sleep
 import os
 from colorama import Fore, Back, Style, init
 import random
+from art import *
 
 init()
 os.system('cls')
@@ -18,11 +19,11 @@ win32clipboard.CloseClipboard()
 colors = [Fore.WHITE, Fore.YELLOW, Fore.RED, Fore.LIGHTBLUE_EX, Fore.LIGHTMAGENTA_EX, Fore.LIGHTGREEN_EX, Fore.LIGHTRED_EX]
 
 youtube_logo ="""
- ▄· ▄▌      ▄• ▄▌▄▄▄▄▄▄• ▄▌▄▄▄▄· ▄▄▄ .
-▐█▪██▌▪     █▪██▌•██  █▪██▌▐█ ▀█▪▀▄.▀·
-▐█▌▐█▪ ▄█▀▄ █▌▐█▌ ▐█.▪█▌▐█▌▐█▀▀█▄▐▀▀▪▄
- ▐█▀·.▐█▌.▐▌▐█▄█▌ ▐█▌·▐█▄█▌██▄▪▐█▐█▄▄▌
-  ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀  ▀▀▀ ·▀▀▀▀  ▀▀▀ 
+ ▄· ▄▌      ▄• ▄▌▄▄▄▄▄▄• ▄▌▄▄▄▄·  ▄· ▄▌
+▐█▪██▌▪     █▪██▌•██  █▪██▌▐█ ▀█▪▐█▪██▌
+▐█▌▐█▪ ▄█▀▄ █▌▐█▌ ▐█.▪█▌▐█▌▐█▀▀█▄▐█▌▐█▪
+ ▐█▀·.▐█▌.▐▌▐█▄█▌ ▐█▌·▐█▄█▌██▄▪▐█ ▐█▀·.
+  ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀  ▀▀▀ ·▀▀▀▀   ▀ • 
 """
 
 for line in youtube_logo:
