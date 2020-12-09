@@ -26,8 +26,8 @@ youtube_logo ="""
   ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀  ▀▀▀ ·▀▀▀▀   ▀ • 
 """
 
-for line in youtube_logo:
-    print(random.choice(colors) + line, end="")
+for char in youtube_logo:
+    print(random.choice(colors) + char, end="")
     sleep(0.01)
 print(Style.RESET_ALL)
 
