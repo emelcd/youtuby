@@ -1,4 +1,0 @@
-#Start
-https://www.youtube.com/watch?v=MV-vhrE55zM&ab_channel=ElSentidoDeLaBirraconRicardoMoya
-https://stackoverflow.com/questions/17402037/insert-multiple-elements-in-string-in-python
-fin
