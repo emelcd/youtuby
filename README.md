@@ -1,6 +1,6 @@
 # Youtuby
 
-#### Una herramienta fácil para descargar música de youtube, usando el portapapeles y youtube_dl.
+#### {SPANISH}Una herramienta fácil para descargar música de youtube, usando el portapapeles y youtube_dl.
 
 Necesitas youtube_dl
 
@@ -21,7 +21,7 @@ python youtuby.py
 Abre un navegador y ve copiando links, cuando quieras acabar escribe: "fin", "end" o "exit" y cópialo al portapapeles.
 
 
-#### An easy tool for download music from youtube, using clipboard.
+#### {ENGLISH}An easy tool for download music from youtube, using clipboard.
 
 
 You need youtube_dl and coloromato work
