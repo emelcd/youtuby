@@ -9,7 +9,7 @@ import random
 import urllib.request
 from zipfile import ZipFile
 import shutil
-
+import msvcrt
 
 try:
     open("./ffmpeg.exe")
@@ -51,6 +51,7 @@ for char in youtube_logo:
 print(Style.RESET_ALL)
 
 while True:
+    
     print("", end="\r")
     print(Fore.YELLOW, end="\r")
     sleep(1)
@@ -64,6 +65,7 @@ while True:
     else:
         print(str(len(clipis) - 1) + " enlaces copiados", end="\r")
         win32clipboard.CloseClipboard()
+        
 print(Fore.LIGHTGREEN_EX)
 
 folder = input(Fore.BLUE+"\nNombra la Carpeta: ").replace(" ", "_")
@@ -79,21 +81,21 @@ menu_P = """
 /* (_) """+Fore.LIGHTWHITE_EX+"""2.Son Canciones"""+Fore.LIGHTGREEN_EX+""" (_) */
 /*  O8ooooooooooooooooo8O  */
 """
-lock = True
-while lock:
+lock2 = True
+while lock2:
     print(Fore.LIGHTGREEN_EX + menu_P)
     selection = input("\n")
     if selection == "2":
         os.system(
             'python -m youtube_dl -a %s.txt -x -i --audio-format "mp3" ' % folder)
         os.system('move *.mp3 ./%s' % folder)
-        lock = False
+        lock2 = False
 
     elif selection == "1":
         os.system(
             'python -m youtube_dl -a %s.txt -i -f "mp4" ' % folder)
         os.system('move *.mp4 ./%s' % folder)
-        lock = False
+        lock2 = False
     else:
         print("Pulse 1 o 2")
 
