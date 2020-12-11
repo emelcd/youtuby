@@ -25,17 +25,6 @@ except:
 
 init()
 
-
-
-
-
-    
-
-
-    
-    
-
-
 os.system('cls')
 clipis = ['#Start']
 win32clipboard.OpenClipboard()
