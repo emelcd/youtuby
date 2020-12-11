@@ -8,6 +8,7 @@ from colorama import Fore, Back, Style, init
 import random
 import urllib.request
 from zipfile import ZipFile
+import shutil
 
 
 try:
@@ -18,10 +19,11 @@ except:
 
     with ZipFile('ffmpeg.zip', 'r') as zipO:
         zipO.extract('ffmpeg-N-100388-g412c3b37a4-win64-gpl/bin/ffmpeg.exe')
+    shutil.move('.\\ffmpeg-N-100388-g412c3b37a4-win64-gpl\\bin\\ffmpeg.exe', '.\\')
     os.system('copy .\\ffmpeg-N-100388-g412c3b37a4-win64-gpl\\bin\\ffmpeg.exe')
     import time
-    os.system('powershell.exe rm ./ffmpeg-N-100388-g412c3b37a4-win64-gpl -Recurse -Confirm:$false -Force ')
-    os.system('powershell.exe rm *zip -Confirm:$false -Force')
+    shutil.rmtree('.//ffmpeg-N-100388-g412c3b37a4-win64-gpl')
+    os.remove('ffmpeg.zip')
 
 init()
 
@@ -82,7 +84,7 @@ fs.close()
 print(Fore.LIGHTBLUE_EX)
 os.system('mkdir %s' % folder)
 print(Fore.LIGHTWHITE_EX)
-selec_v = 'python -m youtube'
+
 os.system('python -m youtube_dl -a %s.txt -x -i --audio-format "mp3" ' % folder)
 os.system('move *.mp3 ./%s' % folder)
 os.system('DEL %s.txt /F' % folder)
