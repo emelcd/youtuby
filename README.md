@@ -5,7 +5,7 @@
 Necesitas youtube_dl
 
 ```bash
-pip install youtube_dl
+pip install youtube_dl colorama
 ```
 
 Se descarga automáticamente el ffmpeg.exe
@@ -24,10 +24,10 @@ Abre un navegador y ve copiando links, cuando quieras acabar escribe: "fin", "en
 #### An easy tool for download music from youtube, using clipboard.
 
 
-You need youtube_dl to work
+You need youtube_dl and coloromato work
 
 ```bash
-pip install youtube_dl
+pip install youtube_dl colorama
 ```
 Automatic download ffmpeg.exe
 ###### Instation:

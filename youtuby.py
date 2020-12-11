@@ -6,7 +6,6 @@ from time import sleep
 import os
 from colorama import Fore, Back, Style, init
 import random
-from art import *
 import urllib.request
 from zipfile import ZipFile
 
