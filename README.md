@@ -2,14 +2,13 @@
 
 #### Una herramienta fácil para descargar música de youtube, usando el portapapeles y youtube_dl.
 
-Necesitas ffmpeg para la extracción y conversión del audio. Ponlo en la misma carpeta que script
-[Descárgalo aquí](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi48pmUgcDtAhUYjhQKHcKKDsYQjBAwAXoECAgQAQ&url=https%3A%2F%2Fffmpeg.org%2Fdownload.html&usg=AOvVaw3jKuUfJ-EELHSbsFN66lZR)
-
 Necesitas youtube_dl
 
 ```bash
 pip install youtube_dl
 ```
+
+Se descarga automáticamente el ffmpeg.exe
 ###### Instalación:
 
 ```bash
@@ -24,14 +23,13 @@ Abre un navegador y ve copiando links, cuando quieras acabar escribe: "fin", "en
 
 #### An easy tool for download music from youtube, using clipboard.
 
-Ffmpeg needed for audio extraction and conversion. Download and move it to the same folder of youtuby.
-[Download Here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi48pmUgcDtAhUYjhQKHcKKDsYQjBAwAXoECAgQAQ&url=https%3A%2F%2Fffmpeg.org%2Fdownload.html&usg=AOvVaw3jKuUfJ-EELHSbsFN66lZR)
 
 You need youtube_dl to work
 
 ```bash
 pip install youtube_dl
 ```
+Automatic download ffmpeg.exe
 ###### Instation:
 
 ```bash

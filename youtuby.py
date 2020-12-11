@@ -7,8 +7,37 @@ import os
 from colorama import Fore, Back, Style, init
 import random
 from art import *
+import urllib.request
+from zipfile import ZipFile
+
+
+try:
+    open("./ffmpeg.exe")
+except:
+    print(Fore.RED+"DESCARGANDO ARCHIVOS PARA LA EXTRACCIÓN Y CONVERSIÓN DEL AUDIO")
+    with ZipFile('ffmpeg.zip', 'r') as zipO:
+        zipO.extract('ffmpeg-N-100388-g412c3b37a4-win64-gpl/bin/ffmpeg.exe')
+    os.system('copy .\\ffmpeg-N-100388-g412c3b37a4-win64-gpl\\bin\\ffmpeg.exe')
+    import time
+    os.system('powershell.exe rm ./ffmpeg-N-100388-g412c3b37a4-win64-gpl -Recurse -Confirm:$false -Force ')
+    os.system('powershell.exe rm *zip -Confirm:$false -Force')
 
 init()
+
+
+urllib.request.urlretrieve("https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-10-12-59/ffmpeg-N-100388-g412c3b37a4-win64-gpl.zip", "ffmpeg.zip")
+
+
+with ZipFile('ffmpeg.zip', 'r') as zipObj:
+    zipObj.extract
+    
+    
+
+
+    
+    
+
+
 os.system('cls')
 clipis = ['#Start']
 win32clipboard.OpenClipboard()
