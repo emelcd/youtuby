@@ -20,8 +20,6 @@ except:
     with ZipFile('ffmpeg.zip', 'r') as zipO:
         zipO.extract('ffmpeg-N-100388-g412c3b37a4-win64-gpl/bin/ffmpeg.exe')
     shutil.move('.\\ffmpeg-N-100388-g412c3b37a4-win64-gpl\\bin\\ffmpeg.exe', '.\\')
-    os.system('copy .\\ffmpeg-N-100388-g412c3b37a4-win64-gpl\\bin\\ffmpeg.exe')
-    import time
     shutil.rmtree('.//ffmpeg-N-100388-g412c3b37a4-win64-gpl')
     os.remove('ffmpeg.zip')
 
