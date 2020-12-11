@@ -76,7 +76,7 @@ os.system('mkdir %s' % folder)
 menu_P = """
 /*  o8ooooooooooooooooo8o  */
 /* (_) """+Fore.LIGHTWHITE_EX+"""1.Son Vídeos"""+Fore.LIGHTGREEN_EX+"""    (_) */
-/* (_) """+Fore.LIGHTWHITE_EX+"""2.Son Canciones (_)"""+Fore.LIGHTGREEN_EX+""" */
+/* (_) """+Fore.LIGHTWHITE_EX+"""2.Son Canciones"""+Fore.LIGHTGREEN_EX+""" (_) */
 /*  O8ooooooooooooooooo8O  */
 """
 lock = True
