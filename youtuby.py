@@ -14,6 +14,8 @@ try:
     open("./ffmpeg.exe")
 except:
     print(Fore.RED+"DESCARGANDO ARCHIVOS PARA LA EXTRACCIÓN Y CONVERSIÓN DEL AUDIO")
+    urllib.request.urlretrieve("https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-10-12-59/ffmpeg-N-100388-g412c3b37a4-win64-gpl.zip", "ffmpeg.zip")
+
     with ZipFile('ffmpeg.zip', 'r') as zipO:
         zipO.extract('ffmpeg-N-100388-g412c3b37a4-win64-gpl/bin/ffmpeg.exe')
     os.system('copy .\\ffmpeg-N-100388-g412c3b37a4-win64-gpl\\bin\\ffmpeg.exe')
@@ -24,12 +26,9 @@ except:
 init()
 
 
-urllib.request.urlretrieve("https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-10-12-59/ffmpeg-N-100388-g412c3b37a4-win64-gpl.zip", "ffmpeg.zip")
 
 
-with ZipFile('ffmpeg.zip', 'r') as zipObj:
-    zipObj.extract
-    
+
     
 
 
@@ -89,3 +88,6 @@ os.system('move *.mp3 ./%s' % folder)
 os.system('DEL %s.txt /F' % folder)
 
 print(Fore.LIGHTMAGENTA_EX + "\nLA DESCARGA HA ACABADO\n")
+
+def menu():
+    print("ass")
